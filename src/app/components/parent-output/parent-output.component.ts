@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentOutputComponent implements OnInit {
 
+  data:string;
+
   constructor() { }
 
   ngOnInit() {
+    this.data = "Hii from parent";
   }
   
   acceptData(data)

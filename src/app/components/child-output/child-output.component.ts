@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child-output',
@@ -6,6 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child-output.component.css']
 })
 export class ChildOutputComponent implements OnInit {
+
+@Input() parentData;
 
   @Output() demo =  new EventEmitter<string>();
 
